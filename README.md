@@ -26,7 +26,7 @@ Application Android démontrant la programmation asynchrone sans bloquer l'inter
 ---
 ## 🎬 Démonstration vidéo
 
-> https://github.com/user-attachments/assets/d1392d65-61f8-4e6d-b447-30fc5756ffab
+> https://github.com/user-attachments/assets/d6a3ec7d-5674-42c9-bb03-e85b9bdc8326
 
 ##  Fonctionnalités
 
