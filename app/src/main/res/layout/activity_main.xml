@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F4FF"
+    android:paddingTop="60dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp">
+
+    <!-- TITRE -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Async Lab"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#1A1A2E"
+        android:gravity="center"
+        android:paddingBottom="4dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thread &amp; AsyncTask"
+        android:textSize="13sp"
+        android:textColor="#888888"
+        android:gravity="center"
+        android:paddingBottom="20dp"/>
+
+    <!-- CARTE STATUT -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="STATUT"
+            android:textSize="10sp"
+            android:textColor="#888888"
+            android:textStyle="bold"
+            android:letterSpacing="0.15"/>
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prêt"
+            android:textSize="15sp"
+            android:textColor="#1A1A2E"
+            android:paddingTop="4dp"/>
+
+        <!-- BARRE DE PROGRESSION VERTE -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_marginTop="12dp"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/progress_green"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/txtPercent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="12sp"
+            android:textColor="#4CAF50"
+            android:gravity="end"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <!-- IMAGE -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IMAGE CHARGÉE"
+            android:textSize="10sp"
+            android:textColor="#888888"
+            android:textStyle="bold"
+            android:letterSpacing="0.15"
+            android:paddingBottom="10dp"/>
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder"
+            android:background="@drawable/image_border"
+            android:contentDescription="image"/>
+
+    </LinearLayout>
+
+    <!-- BOUTONS -->
+    <Button
+        android:id="@+id/btnLoadThread"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Charger image (Thread)"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:backgroundTint="#3F51B5"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btnCalcAsync"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Calcul lourd (AsyncTask)"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:backgroundTint="#7C4DFF"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btnToast"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Afficher Toast"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:backgroundTint="#00BCD4"/>
+
+</LinearLayout>
