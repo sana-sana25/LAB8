@@ -8,7 +8,10 @@
 
 Application Android démontrant la programmation asynchrone sans bloquer l'interface utilisateur (UI Thread).
 
-![App Screenshot](demo/screenshot.png)
+<img width="564" height="696" alt="image" src="https://github.com/user-attachments/assets/13bc7620-a92a-46a5-8f19-9d73e8d4ed75" />
+
+<img width="631" height="881" alt="image" src="https://github.com/user-attachments/assets/e2dabb30-01d2-4355-9b54-73b2a239b9b1" />
+
 
 ---
 
@@ -21,8 +24,11 @@ Application Android démontrant la programmation asynchrone sans bloquer l'inter
 - Éviter les erreurs classiques : UI bloquée, `CalledFromWrongThreadException`
 
 ---
+## 🎬 Démonstration vidéo
 
-## 🚀 Fonctionnalités
+> https://github.com/user-attachments/assets/d1392d65-61f8-4e6d-b447-30fc5756ffab
+
+##  Fonctionnalités
 
 | Bouton | Action | Technologie |
 |---|---|---|
@@ -32,7 +38,7 @@ Application Android démontrant la programmation asynchrone sans bloquer l'inter
 
 ---
 
-## 🏗️ Architecture du projet
+##  Architecture du projet
 
 ```
 LabThreadsAsyncTask/
@@ -48,12 +54,12 @@ LabThreadsAsyncTask/
 │           ├── progress_green.xml     ← Barre de progression verte
 │           ├── image_border.xml       ← Bordure image arrondie
 │           └── placeholder.xml       ← Image par défaut
-└── README.md
+└── 
 ```
 
 ---
 
-## 🧠 Concepts clés
+##  Concepts clés
 
 ### 1. UI Thread (Main Thread)
 - Affiche l'écran et gère les clics
@@ -81,7 +87,7 @@ onPostExecute()     → UI thread   (après)
 
 ---
 
-## 🛠️ Technologies utilisées
+##  Technologies utilisées
 
 - **Langage** : Java
 - **IDE** : Android Studio
@@ -98,24 +104,15 @@ onPostExecute()     → UI thread   (après)
 - [x] Résultat AsyncTask affiché : `51599823`
 - [x] Design moderne et responsive
 
----
 
-## 🎬 Démonstration vidéo
 
-> 📁 Déposer la vidéo dans le dossier `demo/` et renommer en `demo.mp4`
-
-```
-demo/
-├── screenshot.png   ← Capture d'écran de l'app
-└── demo.mp4         ← Vidéo de démonstration
-```
 
 ---
 
 ## 👨‍💻 Auteur
 
-- **Nom** : _Ton Nom_
-- **Filière** : _Ta Filière_
+- **Nom** : ASSEKNOUR Sana
+- **Filière** :Cybersecurity - ENSA Marrakech
 - **Année** : 2025-2026
 
 ---
